@@ -74,8 +74,9 @@ module.exports = {
         baseDir: ['dist']
       },
       // proxy: {
-      //     target: 'http://www.example.com/',
+      //   target: 'http://www.sj123.com/',
       // },
     })
-  ]
+  ],
+
 };

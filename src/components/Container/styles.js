@@ -10,7 +10,7 @@ export default StyleSheet.create({
         width: '100vw',
         minWidth: '100vw',
         margin: '0',
-        backgroundColor: '#000000',
+        // backgroundColor: '#000000',
         backgroundImage: 'radial-gradient(ellipse at center, #000000 65%,#1E1E1E 95%)',
     }
 })
