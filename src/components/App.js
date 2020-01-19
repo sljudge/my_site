@@ -9,6 +9,7 @@ import { Home } from './Home';
 import { About } from './About';
 import { NotFound } from './NotFound';
 import { Skills } from './Skills';
+import { Projects } from './Projects';
 
 const App = props => {
 
@@ -21,6 +22,7 @@ const App = props => {
                         <Route path='/' exact component={Home} />
                         <Route path='/skills' exact component={Skills} />
                         <Route path='/about' exact component={About} />
+                        <Route path='/projects' exact component={Projects} />
                         <Route path='/404' component={NotFound} />
                         <Redirect to='/404' />
                     </Switch>

@@ -35,6 +35,10 @@ export default StyleSheet.create({
         backgroundColor: `rgba(240, 31, 255, ${activeIconBackrgoundOpacity})`,
         color: '#fff81f'
     },
+    activeProjects: {
+        backgroundColor: `rgba(128, 63, 41, ${activeIconBackrgoundOpacity})`,
+        color: '#59e8da'
+    },
     activeAbout: {
         backgroundColor: `rgba(220, 4, 28, ${activeIconBackrgoundOpacity})`,
         color: '#158a03'

@@ -12,7 +12,7 @@ const Nav = props => {
             <NavLink className={css(styles.icon)} activeClassName={css(styles.activeSkills)} to="/skills">
                 <i className="fas fa-file-code"></i>
             </NavLink>
-            <NavLink className={css(styles.icon)} to="#">
+            <NavLink className={css(styles.icon)} activeClassName={css(styles.activeProjects)} to="/projects">
                 <i className="fas fa-folder"></i>
             </NavLink>
             <NavLink className={css(styles.icon)} activeClassName={css(styles.activeAbout)} to="/about">
