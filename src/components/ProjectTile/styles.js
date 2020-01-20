@@ -8,7 +8,10 @@ export default StyleSheet.create({
         width: ' 100%',
         height: '100%',
         backgroundColor: 'rgba(255, 255, 255, 0.4)',
-        padding: '1rem'
+        padding: '1rem',
+        '@media screen and (max-width: 900px)': {
+            justifyContent: "center"
+        }
     },
     imgContainer: {
         display: "flex",
@@ -28,7 +31,11 @@ export default StyleSheet.create({
         maxWidth: '60%',
         height: '80%',
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
-        border: '0.2rem double rgba(0,0,0,0.3)'
+        border: '0.2rem double rgba(0,0,0,0.3)',
+        '@media screen and (max-width: 900px)': {
+            minWidth: '90%',
+            maxWidth: '90%',
+        }
 
     },
     title: {

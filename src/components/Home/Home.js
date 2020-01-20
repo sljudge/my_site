@@ -5,7 +5,7 @@ import styles from './styles'
 const Home = props => {
     return (
         <div className={css(styles.home)}>
-            <div>
+            <div className={css(styles.container)}>
                 <h1>Sam Judge</h1>
                 <h3>Web development and programming solutions.</h3>
             </div>

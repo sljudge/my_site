@@ -8,40 +8,51 @@ const projectList = {
         imgSrc: 'pink_croc.png',
         title: 'Live Auction Application',
         href: 'http://pink-crocodile.data4you.cs',
-        description: 'Auction application created for the Pink Crocodile charity for children with the intention of raising funds from live auctions at social functions.',
+        description: 'Auction application created for the Pink Crocodile charity with the intention of raising funds from live auctions at social functions.',
         madeWith: 'React, Laravel and MySQL'
     }
 }
 
 
 const Projects = (props) => {
-    const [display, setDisplay] = useState(false)
-    const [displayItem, setDisplayItem] = useState(null)
+    const [show, setShow] = useState(false)
+    const [showItem, setShowItem] = useState(null)
+    const [tileDisplay, setTileDisplay] = useState('image')
 
-    const handleDisplay = (e) => {
-        console.log('set display')
-        setDisplayItem(e.target.id)
-        setDisplay(true)
+    const viewportWidth = window.innerWidth
+    const wide = viewportWidth > 900 ? true : false
+
+    const handleShow = (e) => {
+        setShowItem(e.target.id)
+        setShow(true)
+    }
+
+    const handleTileDisplay = () => {
+        setTileDisplay(tileDisplay === 'image' ? 'about' : 'image')
     }
 
     return (
         <div className={css(styles.projects)}>
             <div className={css(styles.titleContainer)}>
-                {display && <div className={css(styles.minimiseBtn, styles.logoHover)} onClick={() => setDisplay(false)}><i className="fas fa-times"></i></div>}
+                {show && <div className={css(styles.minimiseBtn, styles.logoHover)} onClick={() => setShow(false)}><i className="fas fa-times"></i></div>}
                 <h1 className={css(styles.title)}>Projects</h1>
             </div>
             <div className={css(styles.projectsContainer)}>
-                {display &&
+                {show &&
                     <>
                         <div className={css(styles.display)}>
-                            <div className={css(styles.arrow, styles.arrowLeft, styles.arrowHover)}>&lt;</div>
-                            <ProjectTile data={projectList.pinkCroc} />
-                            <div className={css(styles.arrow, styles.arrowRight, styles.arrowHover)}>&gt;</div>
+                            {!wide && <div className={css(styles.arrow, styles.arrowLeft)} onClick={handleTileDisplay}>&lt;</div>}
+                            <ProjectTile
+                                data={projectList.pinkCroc}
+                                wide={wide}
+                                tileDisplay={tileDisplay}
+                            />
+                            {!wide && <div className={css(styles.arrow, styles.arrowRight)} onClick={handleTileDisplay}>&gt;</div>}
                         </div>
                     </>
                 }
 
-                <div id='pink_croc' className={css(styles.logoContainer, styles.logoHover)} onClick={handleDisplay}>
+                <div id='pink_croc' className={css(styles.logoContainer)} onClick={handleShow}>
                     <img className={css(styles.logo)} src="./img/logos/pink_croc_logo.svg" />
                 </div>
             </div>

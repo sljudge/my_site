@@ -3,10 +3,18 @@ import { StyleSheet } from 'aphrodite'
 export default StyleSheet.create({
     about: {
         display: "flex",
-        alignItems: "center",
-        width: '100%',
+        flexDirection: "column",
         height: '100%',
-        padding: '2rem',
+        paddingLeft: '2rem',
+        paddingRight: '2rem',
+    },
+    infoContainer: {
+        display: "flex",
+        alignItems: "center",
+        '@media screen and (max-width: 900px)': {
+            flexDirection: 'column',
+            justifyContent: "center",
+        }
     },
     aboutElem: {
         display: 'flex',
@@ -15,18 +23,29 @@ export default StyleSheet.create({
         justifyContent: 'center',
         width: '50%',
         height: '100%',
-        padding: '1rem'
+        padding: '1rem',
+        '@media screen and (max-width: 900px)': {
+            width: '100%'
+        }
     },
     title: {
-        margin: '0',
         textAlign: 'right',
-        width: '100%'
+        width: '100%',
+        borderRight: '0.25rem solid #1E1E1E',
+        padding: '1rem',
+        marginBottom: '0.25rem',
     },
     text: {
         margin: '0',
     },
     profile: {
         height: '19rem',
-        border: '0.3rem double #1E1E1E'
+        border: '0.3rem double #1E1E1E',
+        '@media screen and (max-width: 600px)': {
+            height: '16rem'
+        },
+        '@media screen and (max-width: 475px) and (max-height: 700px)': {
+            height: '10.5rem'
+        }
     }
 })

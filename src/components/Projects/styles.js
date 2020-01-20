@@ -15,7 +15,9 @@ export default StyleSheet.create({
     },
     title: {
         marginBottom: '0.25rem',
-        marginLeft: 'auto'
+        marginLeft: 'auto',
+        borderRight: '0.25rem solid #1E1E1E',
+        padding: '1rem'
     },
     projectsContainer: {
         position: 'relative',
@@ -36,18 +38,16 @@ export default StyleSheet.create({
         height: '12rem',
         margin: '1.5rem',
         backgroundColor: 'rgba(255, 255, 255, 0.4)',
-        borderRadius: '50%'
+        borderRadius: '50%',
+        ':hover': {
+            backgroundColor: 'whitesmoke',
+        }
     },
     logo: {
         minWidth: '9rem',
         maxWidth: '9rem',
         minHeight: '9rem',
         maxHeight: '9rem',
-    },
-    logoHover: {
-        ':hover': {
-            backgroundColor: 'whitesmoke',
-        }
     },
     ///////////////////////////////////////////////////////////////////////////
     display: {
@@ -68,6 +68,9 @@ export default StyleSheet.create({
         backgroundColor: 'rgba(0,0,0,0.2)',
         color: 'rgba(220, 4, 28, 0.5)',
         borderRadius: '1rem 1rem 0 0',
+        ':hover': {
+            backgroundColor: 'whitesmoke',
+        }
 
     },
     arrow: {
@@ -79,6 +82,10 @@ export default StyleSheet.create({
         width: '2rem',
         color: '#1E1E1E',
         backgroundColor: 'rgba(0,0,0,0.2)',
+        ':hover': {
+            color: 'whitesmoke',
+            backgroundColor: 'rgba(0,0,0,0.5)',
+        }
     },
     arrowLeft: {
         borderRadius: '1rem 0 0 1rem'
@@ -86,11 +93,5 @@ export default StyleSheet.create({
     arrowRight: {
         borderRadius: '0 1rem 1rem 0'
     },
-    arrowHover: {
-        ':hover': {
-            color: 'whitesmoke',
-            backgroundColor: 'rgba(0,0,0,0.5)',
-        }
-    }
 
 })
