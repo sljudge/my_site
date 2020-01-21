@@ -30,12 +30,12 @@ const Nav = props => {
                 {
                     viewportWidth > 700 &&
                     <>
-                        <NavLink className={css(styles.icon)} to="#">
+                        <a className={css(styles.icon)} href='https://github.com/sljudge' target='_blank'>
                             <i className="fab fa-github"></i>
-                        </NavLink>
-                        <NavLink className={css(styles.icon, styles.lastIcon)} to="#">
+                        </a>
+                        <a className={css(styles.icon, styles.lastIcon)} href='https://www.linkedin.com/in/sam-judge/' target='_blank'>
                             <i className="fab fa-linkedin"></i>
-                        </NavLink>
+                        </a>
                     </>
                 }
             </motion.div>

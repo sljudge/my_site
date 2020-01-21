@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { css } from 'aphrodite'
 import styles from './styles'
 import { motion } from 'framer-motion'
@@ -7,18 +6,22 @@ import { motion } from 'framer-motion'
 
 const MobileFooter = () => {
     return (
-        <motion.div
-            animate={{ y: '-5.5rem' }}
-            transition={{ ease: 'easeIn', duration: 2 }}
-            className={css(styles.mobileFooter)}
-        >
-            <NavLink className={css(styles.icon)} to="#">
-                <i className="fab fa-github"></i>
-            </NavLink>
-            <NavLink className={css(styles.icon)} to="#">
-                <i className="fab fa-linkedin"></i>
-            </NavLink>
-        </motion.div>
+        <div className={css(styles.mobileFooter)}>
+            <motion.div
+                animate={{ x: '-100%' }}
+                transition={{ ease: 'easeIn', duration: 2 }}
+                className={css(styles.footerIconsContainer)}
+
+            >
+                <a className={css(styles.icon)} href="https://github.com/sljudge" target='_blank'>
+                    <i className="fab fa-github"></i>
+                </a>
+                <a className={css(styles.icon)} href="https://www.linkedin.com/in/sam-judge/" target='_blank'>
+                    <i className="fab fa-linkedin"></i>
+                </a>
+            </motion.div>
+
+        </div>
     )
 }
 

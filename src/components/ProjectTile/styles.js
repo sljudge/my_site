@@ -54,7 +54,7 @@ export default StyleSheet.create({
     },
     cog: {
         fontSize: '2rem',
-        marginRight: '1rem'
+        margin: '1rem'
     },
     img: {
         height: '90%',

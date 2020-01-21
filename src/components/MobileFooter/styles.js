@@ -2,15 +2,19 @@ import { StyleSheet } from 'aphrodite'
 
 export default StyleSheet.create({
     mobileFooter: {
-        position: "relative",
-        bottom: '-5.5rem',
-        display: 'flex',
-        justifyContent: 'space-around',
-        alignItems: "center",
         minWidth: '100vw',
         maxWidth: '100vw',
         minHeight: '5.5rem',
         maxHeight: '5.5rem',
+    },
+    footerIconsContainer: {
+        position: "relative",
+        right: '-100%',
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: "center",
+        width: '100%',
+        height: '5.5rem',
         fontSize: '3rem',
     },
     icon: {

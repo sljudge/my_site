@@ -11,7 +11,7 @@ export default StyleSheet.create({
         maxWidth: 'calc(100% - 6.5rem)',
         '@media screen and (max-width: 700px)': {
             maxWidth: '100%',
-            minWidth: '100%'
+            minWidth: '100%',
         }
     },
     panel: {
@@ -24,6 +24,7 @@ export default StyleSheet.create({
         boxShadow: 'inset 7px 7px 70px -7px rgba(30,30,30,0.9)',
         '@media screen and (max-width: 900px)': {
             height: '100%'
+
         }
     }
 })

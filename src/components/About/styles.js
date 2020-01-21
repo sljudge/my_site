@@ -4,7 +4,8 @@ export default StyleSheet.create({
     about: {
         display: "flex",
         flexDirection: "column",
-        height: '100%',
+        minHeight: '100%',
+        maxHeight: '100%',
         paddingLeft: '2rem',
         paddingRight: '2rem',
     },
@@ -45,7 +46,7 @@ export default StyleSheet.create({
             height: '16rem'
         },
         '@media screen and (max-width: 475px) and (max-height: 700px)': {
-            height: '10.5rem'
+            height: '10rem'
         }
     }
 })
