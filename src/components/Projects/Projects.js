@@ -4,7 +4,7 @@ import styles from './styles'
 import { ProjectTile } from '../ProjectTile'
 
 const projectList = {
-    pinkCroc: {
+    pink_croc: {
         imgSrc: 'pink_croc.png',
         title: 'Live Auction Application',
         href: 'http://pink-crocodile.data4you.cz',
@@ -12,7 +12,11 @@ const projectList = {
         madeWith: 'React, Laravel and MySQL'
     },
     currency_converter: {
-
+        imgSrc: 'currency.jpeg',
+        title: 'Native Currency Converter',
+        href: 'https://github.com/sljudge/currency_converter',
+        description: 'React Native currency converter made with the guidance of handlebarlabs.com',
+        madeWith: 'React Native, Redux, Redux Saga'
     }
 }
 
@@ -46,7 +50,7 @@ const Projects = (props) => {
                         <div className={css(styles.display)}>
                             {!wide && <div className={css(styles.arrow, styles.arrowLeft)} onClick={handleTileDisplay}>&lt;</div>}
                             <ProjectTile
-                                data={projectList.pinkCroc}
+                                data={projectList[showItem]}
                                 wide={wide}
                                 tileDisplay={tileDisplay}
                             />
@@ -55,8 +59,11 @@ const Projects = (props) => {
                     </>
                 }
 
-                <div id='pink_croc' className={css(styles.logoContainer)} onClick={handleShow}>
-                    <img className={css(styles.logo)} src="./img/logos/pink_croc_logo.svg" />
+                <div className={css(styles.logoContainer)} onClick={handleShow}>
+                    <img id='pink_croc' className={css(styles.logo)} src="./img/logos/pink_croc_logo.svg" onClick={handleShow} />
+                </div>
+                <div className={css(styles.logoContainer)} onClick={handleShow}>
+                    <img id='currency_converter' className={css(styles.logo)} src="./img/logos/currency.png" onClick={handleShow} />
                 </div>
             </div>
         </div>
