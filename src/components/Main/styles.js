@@ -9,10 +9,15 @@ export default StyleSheet.create({
         justifyContent: "center",
         flexGrow: '1',
         maxWidth: 'calc(100% - 6.5rem)',
+        '@media screen and (max-width: 900px)': {
+            minHeight: '100%',
+            alignItems: "stretch"
+        },
         '@media screen and (max-width: 700px)': {
             maxWidth: '100%',
             minWidth: '100%',
-        }
+            minHeight: 'calc(100% - 12rem)'
+        },
     },
     panel: {
         height: '35rem',
@@ -23,8 +28,7 @@ export default StyleSheet.create({
         border: '5px inset rbga(0,0,0,0.1)',
         boxShadow: 'inset 7px 7px 70px -7px rgba(30,30,30,0.9)',
         '@media screen and (max-width: 900px)': {
-            height: '100%'
-
+            height: 'auto',
         }
     }
 })

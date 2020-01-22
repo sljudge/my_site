@@ -10,6 +10,9 @@ const projectList = {
         href: 'http://pink-crocodile.data4you.cz',
         description: 'Auction application for mobile created for the Pink Crocodile charity with the intention of raising funds from live auctions at social functions.',
         madeWith: 'React, Laravel and MySQL'
+    },
+    currency_converter: {
+
     }
 }
 
