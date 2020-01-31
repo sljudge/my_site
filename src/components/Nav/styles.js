@@ -30,8 +30,8 @@ export default StyleSheet.create({
 
     },
     iconsContainer: {
-        position: "relative",
-        left: '-6.5rem',
+        // position: "relative",
+        // left: '-6.5rem',
         display: 'flex',
         flexDirection: "column",
         alignItems: "center",

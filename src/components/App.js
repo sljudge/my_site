@@ -17,12 +17,12 @@ const viewportWidth = window.innerWidth
 
 const App = props => {
     const [mobile, setMobile] = useState(viewportWidth > 700 ? false : true)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 5000)
+        }, 3000)
     }, [])
 
     return (

@@ -8,8 +8,10 @@ export default StyleSheet.create({
         maxHeight: '100%',
         paddingLeft: '2rem',
         paddingRight: '2rem',
+        overflowY: 'scroll',
     },
     infoContainer: {
+        height: '100%',
         display: "flex",
         alignItems: "center",
         '@media screen and (max-width: 900px)': {
@@ -38,6 +40,8 @@ export default StyleSheet.create({
     },
     text: {
         margin: '0',
+        lineHeight: '2.25rem',
+        height: '100%'
     },
     profile: {
         height: '19rem',

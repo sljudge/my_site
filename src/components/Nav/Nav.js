@@ -11,8 +11,8 @@ const Nav = props => {
     return (
         <div className={css(styles.nav)}>
             <motion.div
-                animate={{ x: mobile ? '100%' : '6.5rem' }}
-                transition={{ ease: 'easeIn', duration: 1.5 }}
+                // animate={{ x: mobile ? '100%' : '6.5rem' }}
+                // transition={{ ease: 'easeIn', duration: 1.5 }}
                 className={css(styles.iconsContainer)}
             >
                 <NavLink className={css(styles.icon)} exact activeClassName={css(styles.activeHome)} to="/">

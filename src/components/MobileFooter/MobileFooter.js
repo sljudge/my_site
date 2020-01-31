@@ -8,8 +8,8 @@ const MobileFooter = () => {
     return (
         <div className={css(styles.mobileFooter)}>
             <motion.div
-                animate={{ x: '-100%' }}
-                transition={{ ease: 'easeIn', duration: 2 }}
+                // animate={{ x: '-100%' }}
+                // transition={{ ease: 'easeIn', duration: 2 }}
                 className={css(styles.footerIconsContainer)}
 
             >

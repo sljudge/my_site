@@ -8,8 +8,8 @@ export default StyleSheet.create({
         maxHeight: '5.5rem',
     },
     footerIconsContainer: {
-        position: "relative",
-        right: '-100%',
+        // position: "relative",
+        // right: '-100%',
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: "center",

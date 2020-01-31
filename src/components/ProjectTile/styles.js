@@ -4,13 +4,17 @@ export default StyleSheet.create({
     projectContainer: {
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        // justifyContent: "space-between",
+        justifyContent: "center",
         width: ' 100%',
         height: '100%',
         backgroundColor: 'rgba(255, 255, 255, 0.4)',
         padding: '1rem',
         '@media screen and (max-width: 900px)': {
-            justifyContent: "center"
+            justifyContent: "center",
+        },
+        '@media screen and (max-width: 700px)': {
+            justifyContent: "center",
         }
     },
     imgContainer: {
@@ -18,24 +22,24 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         height: '100%',
-        minWidth: '40%',
-        maxWidth: '40%'
+        width: 'auto'
     },
     textContainer: {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "center",
         textAlign: "center",
-        minWidth: '60%',
-        maxWidth: '60%',
-        height: '80%',
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        minWidth: '100%',
+        maxWidth: '100%',
+        height: '100%',
+        backgroundColor: 'rgba(255, 255, 255, 1)',
         border: '0.2rem double rgba(0,0,0,0.3)',
         '@media screen and (max-width: 900px)': {
-            minWidth: '90%',
-            maxWidth: '90%',
-        }
+            minWidth: '100%',
+            maxWidth: '100%',
+        },
+        overflow: 'scroll'
 
     },
     title: {
@@ -57,7 +61,9 @@ export default StyleSheet.create({
         margin: '1rem'
     },
     img: {
-        height: '90%',
+        maxHeight: '90%',
+        width: 'auto',
+        maxWidth: '100%'
     }
 
 })

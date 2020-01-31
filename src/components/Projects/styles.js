@@ -7,6 +7,11 @@ export default StyleSheet.create({
         height: '100%',
         paddingLeft: '2rem',
         paddingRight: '2rem',
+        overflowY: 'scroll',
+    },
+    projectsShow: {
+        paddingLeft: '0',
+        paddingRight: '0'
     },
     titleContainer: {
         display: "flex",
@@ -27,7 +32,8 @@ export default StyleSheet.create({
         alignItems: "center",
         width: '100%',
         height: '100%',
-        marginBottom: '2rem'
+        marginBottom: '2rem',
+
     },
     ///////////////////////////////////////////////////////////////////////////////////////
     logoContainer: {
@@ -49,6 +55,12 @@ export default StyleSheet.create({
         minHeight: '9rem',
         maxHeight: '9rem',
     },
+    logoSmall: {
+        minWidth: '6rem',
+        maxWidth: '6rem',
+        minHeight: '6rem',
+        maxHeight: '6rem',
+    },
     ///////////////////////////////////////////////////////////////////////////
     display: {
         position: "absolute",
@@ -56,14 +68,18 @@ export default StyleSheet.create({
         top: '0',
         display: 'flex',
         width: '100%',
-        height: '100%'
+        height: '100%',
+        '@media screen and (max-width: 700px)': {
+            justifyContent: "center",
+            maxHeight: 'calc(100vh - 15rem)'
+        }
     },
     minimiseBtn: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: "flex-end",
         width: '6rem',
-        fontSize: '2.5rem',
+        fontSize: '3rem',
         marginLeft: '2rem',
         backgroundColor: 'rgba(0,0,0,0.2)',
         color: 'rgba(220, 4, 28, 0.5)',
@@ -79,12 +95,12 @@ export default StyleSheet.create({
         justifyContent: "center",
         fontSize: '2rem',
         height: '100%',
-        width: '2rem',
+        width: '4rem',
         color: '#1E1E1E',
-        backgroundColor: 'rgba(0,0,0,0.2)',
+        backgroundColor: 'rgba(0,0,0,0.4)',
         ':hover': {
             color: 'whitesmoke',
-            backgroundColor: 'rgba(0,0,0,0.5)',
+            backgroundColor: 'rgba(0,0,0,0.7)',
         }
     },
     arrowLeft: {

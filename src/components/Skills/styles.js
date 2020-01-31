@@ -7,7 +7,9 @@ export default StyleSheet.create({
         height: '100%',
         paddingLeft: '2rem',
         paddingRight: '2rem',
-        textAlign: 'right'
+        textAlign: 'right',
+        overflowY: 'scroll',
+
     },
     title: {
         borderRight: '0.25rem solid #1E1E1E',
@@ -15,7 +17,9 @@ export default StyleSheet.create({
         marginBottom: '0.25rem'
     },
     text: {
-        textAlign: 'left'
+        textAlign: 'left',
+        lineHeight: '2.25rem',
+        padding: '2rem'
     },
     iconsContainer: {
         display: 'flex',
@@ -48,6 +52,7 @@ export default StyleSheet.create({
     },
     icon: {
         padding: '0.8rem',
+        margin: '0.25rem',
         fontSize: '3rem',
         backgroundColor: '#232323',
         color: 'whitesmoke',
@@ -65,7 +70,4 @@ export default StyleSheet.create({
             margin: '0.5rem',
         }
     },
-    iconHover: {
-    }
-
 })

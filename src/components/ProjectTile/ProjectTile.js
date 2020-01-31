@@ -5,8 +5,9 @@ import styles from './styles'
 const ProjectTile = props => {
     const wide = props.wide
     const display = props.tileDisplay
-    const { imgSrc, title, href, description, madeWith } = { ...props.data }
+    const { imgSrc, altImgSrc, title, href, description, madeWith } = { ...props.data }
 
+    console.log(props)
 
     //////////////////////////
     //////    CONTENT   //////
@@ -14,7 +15,7 @@ const ProjectTile = props => {
     const image = (
         <>
             <div className={css(styles.imgContainer)}>
-                <img className={css(styles.img)} src={`./img/screenshots/${imgSrc}`} />
+                <img className={css(styles.img)} src={wide ? `./img/screenshots/${imgSrc}` : `./img/screenshots/${altImgSrc}`} />
             </div>
         </>
     )
@@ -37,14 +38,7 @@ const ProjectTile = props => {
     //////  SET CONTENT //////
     //////////////////////////
     let content
-    if (wide) {
-        content = (
-            <>
-                {image}
-                {about}
-            </>
-        )
-    } else if (display === 'image') {
+    if (display === 'image') {
         content = (
             <>
                 {image}

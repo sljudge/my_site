@@ -20,7 +20,7 @@ export default StyleSheet.create({
         },
     },
     panel: {
-        height: '35rem',
+        height: '50rem',
         width: '100%',
         color: '#1E1E1E',
         backgroundImage: 'url(./img/paper.jpg)',
