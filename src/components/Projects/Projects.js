@@ -21,8 +21,8 @@ const projectList = {
         madeWith: 'React Native, Redux, Redux Saga'
     },
     chess_openings: {
-        imgSrc: 'chess.png',
-        altImgSrc: 'chess_narrow.png',
+        imgSrc: 'chess.PNG',
+        altImgSrc: 'chess_narrow.PNG',
         title: 'Chess Explorer',
         href: 'https://github.com/sljudge/chess_openings',
         description: 'Application designed to help with chess openings and exploration. Built from scratch implementing full rules, automated play against the computer and move-by-move data from the Lichess api. Redux Saga used to manage api calls, synchronicity and state history. Component styling implemented with Aphrodite and CSS in JS.',
